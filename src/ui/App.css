@@ -1,0 +1,128 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  font-family: 'Segoe UI', sans-serif;
+  -webkit-app-region: drag;
+  user-select: none;
+  -webkit-user-select: none;
+  overflow: hidden;
+  justify-content: center;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: transparent;
+}
+
+.app-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 20px;
+  background: transparent;
+}
+
+.header {
+  padding: 10px 20px;
+  border: 2px solid white;        
+  border-radius: 8px;             
+  display: inline-block; 
+  background: rgba(0, 0, 0, 0.3);   
+}
+
+.header h3{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+.note-area {
+  background-color: transparent;
+  -webkit-app-region: no-drag;
+}
+
+.note-area textarea{
+   height: 70vh;
+  width: 95vw;
+  resize: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  backdrop-filter: blur(10px);
+  -webkit-app-region: no-drag;
+}
+
+.actions{
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+  margin-top: 10px;
+  background: transparent;
+}
+
+.actions button {
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 6px 30px;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(30, 30, 30, 0.95);
+  padding: 20px;
+  border-radius: 16px;
+  color: white;
+  z-index: 9999;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  width: 300px;
+  text-align: center;
+}
+
+.popup button {
+  margin-top: 10px;
+  background: #007bff;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.feedback{
+  display: flex;
+  justify-content: center;
+  width: 60vw;
+  margin-top: 0;
+  background: transparent;
+}
+
+.feedback button {
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 6px 30px;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
